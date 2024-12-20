@@ -13,6 +13,12 @@ I mainly code in Typescript and Rust, so there might be a few highlight groups t
 I also use treesitter, so I didn't bother making the theme work without it.
 Therefore, PR's are more than welcome.
 
+<img width="1421" alt="image" src="https://github.com/user-attachments/assets/26573085-cfdf-4288-bfe6-e30896b2aa8f" />
+
+<img width="1414" alt="image" src="https://github.com/user-attachments/assets/59fa4d23-2a76-495e-b28f-d8456b992537" />
+
+
+
 ## Installation
 
 ### Lazy
