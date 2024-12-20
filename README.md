@@ -1,4 +1,8 @@
 <div align="center">
+
+  ![wolf_gpt-removebg-preview](https://github.com/user-attachments/assets/871f85c8-e1ab-423f-ae4c-3d9471d079cb)
+
+
   <h1>nightwolf.nvim</h1>
 </div>
 
