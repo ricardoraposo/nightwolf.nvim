@@ -6,7 +6,7 @@ local hi = utils.highlight
 local link = utils.link
 
 M.load = function(opts)
-  local opts = opts or { theme = 'dark' }
+  opts = opts or { theme = 'dark' }
 
   local p
   if opts.theme == 'light' then
