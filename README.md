@@ -42,12 +42,24 @@ use ("ricardoraposo/nightwolf.nvim")
 ### Vim Script
 
 ```vim
+" Dark theme
+set background=dark
+colorscheme nightwolf
+
+" Light theme
+set background=light
 colorscheme nightwolf
 ```
 
 ### Lua
 
 ```lua
+-- Dark theme
+vim.opt.background = 'dark'
+vim.cmd.colorscheme("nightwolf")
+
+-- Light theme
+vim.opt.background = 'light'
 vim.cmd.colorscheme("nightwolf")
 ```
 
