@@ -1,1 +1,1 @@
-require('nightwolf').load()
+require("nightwolf").load()
