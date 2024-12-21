@@ -58,8 +58,8 @@ M.load = function(opts)
 
   local groups = get_groups(p)
 
-  for highlit_group, styles in pairs(groups) do
-    vim.api.nvim_set_hl(0, highlit_group, styles)
+  for highlight_group, styles in pairs(groups) do
+    vim.api.nvim_set_hl(0, highlight_group, styles)
   end
 end
 
