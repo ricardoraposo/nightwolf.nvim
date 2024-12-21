@@ -1,6 +1,7 @@
 local M = {}
 
 M.dark_colors = {
+  background = '#000000',
   black = '#000000',
   red = '#f05050',
   white = '#ffffff',
@@ -24,6 +25,7 @@ M.dark_colors = {
 }
 
 M.light_colors = {
+  background = '#eceff8',
   black = '#eceff8',
   red = '#d70000',
   white = '#000000',
