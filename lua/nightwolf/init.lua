@@ -29,11 +29,11 @@ local get_groups = require 'nightwolf.groups'
 ---@class NighwolfConfig
 ---@field theme string?
 ---@field transparency boolean?
----@field overrides Palette?
+---@field palette_overrides Palette?
 M.config = {
   theme = 'dark',
   transparency = false,
-  overrides = {},
+  palette_overrides = {},
 }
 
 
@@ -52,7 +52,7 @@ M.load = function(opts)
     p = palette.dark_colors
   end
 
-  p = vim.tbl_deep_extend('force', p, M.config.overrides)
+  p = vim.tbl_deep_extend('force', p, M.config.palette_overrides)
 
   p.background = opts.transparency == true and '' or p.background
 

@@ -28,6 +28,7 @@ Therefore, PR's are more than welcome.
   "ricardoraposo/nightwolf.nvim",
   lazy = false,
   priority = 1000,
+  opts = {},
 }
 ```
 
@@ -63,6 +64,62 @@ vim.opt.background = 'light'
 vim.cmd.colorscheme("nightwolf")
 ```
 
+## Configuration
+
+Additional settings for nightwolf are:
+
+```lua
+-- Default options:
+{
+  theme = 'dark',
+  transparency = false,
+  palette_overrides = {},
+}
+```
+
+**VERY IMPORTANT**: Make sure to call setup() **BEFORE** calling the colorscheme command, to use your custom configs
+
+## Overriding
+
+### Palette
+
+You can specify your own palette colors. For example:
+
+```lua
+require('nightwolf').setup {
+  palette_overrides = {
+    background = "#ff0000",
+    darkYellow = '#ffa500',
+  }
+}
+```
+
+Check below for valid entries:
+
+```lua
+  background = '#000000',
+  black = '#000000',
+  red = '#f05050',
+  white = '#ffffff',
+  blue = '#00b1ff',
+  lightPurple = '#dc8cff',
+  darkPurple = '#9696ff',
+  cyan = '#00dcdc',
+  lightYellow = '#ffdc96',
+  darkYellow = '#ffb482',
+  green = '#aae682',
+  lightRed = '#ff7878',
+  muted = '#c8c8c8',
+  color9 = '#647882',
+  color12 = '#969696',
+  color14 = '#141414',
+  color15 = '#161b10',
+  color16 = '#230c0b',
+  color17 = '#343434',
+  color18 = '#3c3c3c',
+  color19 = '#787878',
+```
+obs.: I'm not the most creative, feel free to suggest better naming for those colors
 
 ## Acknowledgements
 
