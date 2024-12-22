@@ -1,3 +1,11 @@
+---@class Style
+---@field bg string?
+---@field fg string?
+---@field bold boolean?
+---@field italic boolean?
+---@field strikethrough boolean?
+
+---@type table<string, Style>?
 return function(p)
   return {
     Normal = { bg = p.background, fg = p.muted },

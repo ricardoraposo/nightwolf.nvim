@@ -121,6 +121,39 @@ Check below for valid entries:
 ```
 obs.: I'm not the most creative, feel free to suggest better naming for those colors
 
+### Highlight groups
+
+If you don't enjoy the current color for a specific highlight group, now you can just override it in the setup. For
+example:
+
+```lua
+require("nightwolf").setup({
+    highlight_overrides = {
+        SignColumn = { bg = "#ff9900" }
+    }
+})
+```
+
+It also works with treesitter groups and lsp semantic highlight tokens
+
+```lua
+require("nightwolf").setup({
+    highlight_overrides = {
+        ["@lsp.type.method"] = { bg = "#ff9900" },
+        ["@comment.lua"] = { bg = "#000000" },
+    }
+})
+```
+
+Please note that the override values must follow the attributes from the highlight group map, such as:
+
+- **fg** - foreground color
+- **bg** - background color
+- **bold** - true or false for bold font
+- **italic** - true or false for italic font
+
+Other values can be seen in [`synIDattr`](<https://neovim.io/doc/user/builtin.html#synIDattr()>)
+
 ## Acknowledgements
 
 - [Mao Santaella/Nightwolf for vscode](https://github.com/mao-santaella-rs/NightWolfTheme) for creating the original theme

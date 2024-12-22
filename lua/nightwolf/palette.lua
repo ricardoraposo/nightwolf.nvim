@@ -1,5 +1,29 @@
 local M = {}
 
+---@class Palette
+---@field background string?
+---@field black string?
+---@field red string?
+---@field white string?
+---@field blue string?
+---@field lightPurple string?
+---@field darkPurple string?
+---@field cyan string?
+---@field lightYellow string?
+---@field darkYellow string?
+---@field green string?
+---@field lightRed string?
+---@field muted string?
+---@field color9 string?
+---@field color12 string?
+---@field color14 string?
+---@field color15 string?
+---@field color16 string?
+---@field color17 string?
+---@field color18 string?
+---@field color19 string?
+
+---@type Palette
 M.dark_colors = {
   background = '#000000',
   black = '#000000',
@@ -24,6 +48,7 @@ M.dark_colors = {
   color19 = '#787878',
 }
 
+---@type Palette
 M.light_colors = {
   background = '#eceff8',
   black = '#eceff8',
