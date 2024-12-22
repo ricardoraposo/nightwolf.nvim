@@ -3,7 +3,7 @@
   <img width="300" alt="image_logo" src="https://github.com/user-attachments/assets/871f85c8-e1ab-423f-ae4c-3d9471d079cb" />
 
 
-  <h1>nightwolf.nvim</h1>
+  <h1>Nightwolf</h1>
 </div>
 
 
