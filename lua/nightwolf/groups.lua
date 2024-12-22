@@ -126,6 +126,8 @@ return function(p)
     ['@string.escape.rust'] = { bg = '', fg = p.green },
 
     -- function
+    ['@function.method.vue'] = { bg = '', fg = p.darkPurple, italic = true },
+
     ['@function.call'] = { bg = '', fg = p.cyan, italic = true },
     ['@function.call.tsx'] = { bg = '', fg = p.cyan, italic = true },
     ['@function.call.lua'] = { bg = '', fg = p.darkPurple },
@@ -137,10 +139,13 @@ return function(p)
     -- tag
     ['@tag'] = { bg = '', fg = p.lightRed },
     ['@tag.tsx'] = { bg = '', fg = p.lightRed },
+
     ['@tag.builtin'] = { bg = '', fg = p.lightRed },
     ['@tag.builtin.tsx'] = { bg = '', fg = p.lightRed },
+
     ['@tag.attribute'] = { bg = '', fg = p.darkPurple },
     ['@tag.attribute.tsx'] = { bg = '', fg = p.darkPurple },
+
     ['@tag.delimiter'] = { bg = '', fg = p.muted },
     ['@tag.delimiter.tsx'] = { bg = '', fg = p.muted },
 
