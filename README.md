@@ -127,22 +127,22 @@ If you don't enjoy the current color for a specific highlight group, now you can
 example:
 
 ```lua
-require("nightwolf").setup({
+require('nightwolf').setup {
     highlight_overrides = {
         SignColumn = { bg = "#ff9900" }
     }
-})
+}
 ```
 
 It also works with treesitter groups and lsp semantic highlight tokens
 
 ```lua
-require("nightwolf").setup({
+require('nightwolf').setup {
     highlight_overrides = {
         ["@lsp.type.method"] = { bg = "#ff9900" },
         ["@comment.lua"] = { bg = "#000000" },
     }
-})
+}
 ```
 
 Please note that the override values must follow the attributes from the highlight group map, such as:
