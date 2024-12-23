@@ -1,22 +1,17 @@
----@class Style
----@field bg string?
----@field fg string?
----@field bold boolean?
----@field italic boolean?
----@field strikethrough boolean?
-
----@type table<string, Style>?
-return function(p)
+---@param p Palette
+---@param italic boolean
+---@return table<string, vim.api.keyset.highlight>
+return function(p, italic)
   return {
     Normal = { bg = p.background, fg = p.muted },
-    Type = { bg = '', fg = p.blue, italic = true },
+    Type = { bg = '', fg = p.blue, italic = italic },
     String = { bg = '', fg = p.green },
     Operator = { bg = '', fg = p.lightRed },
     Number = { bg = '', fg = p.darkYellow },
     Conditional = { bg = '', fg = p.darkPurple },
     Statement = { bg = '', fg = p.darkPurple },
     Error = { bg = p.red, fg = p.white },
-    Comment = { bg = '', fg = p.color9, italic = true },
+    Comment = { bg = '', fg = p.color9, italic = italic },
     Repeat = { bg = '', fg = p.darkPurple },
     Function = { bg = '', fg = p.cyan, bold = true },
     Identifier = { bg = '', fg = p.lightYellow },
@@ -52,8 +47,8 @@ return function(p)
     ['@keyword.typescript'] = { bg = '', fg = p.blue },
     ['@keyword.rust'] = { bg = '', fg = p.lightRed },
 
-    ['@keyword.function'] = { bg = '', fg = p.blue, italic = true },
-    ['@keyword.function.tsx'] = { bg = '', fg = p.blue, italic = true },
+    ['@keyword.function'] = { bg = '', fg = p.blue, italic = italic },
+    ['@keyword.function.tsx'] = { bg = '', fg = p.blue, italic = italic },
     ['@keyword.function.rust'] = { bg = '', fg = p.lightRed },
 
     ['@keyword.operator'] = { bg = '', fg = p.lightRed },
@@ -62,8 +57,8 @@ return function(p)
     ['@keyword.type'] = { bg = '', fg = p.blue },
     ['@keyword.type.typescript'] = { bg = '', fg = p.blue },
 
-    ['@keyword.coroutine'] = { bg = '', fg = p.darkPurple, italic = true },
-    ['@keyword.coroutine.typescript'] = { bg = '', fg = p.darkPurple, italic = true },
+    ['@keyword.coroutine'] = { bg = '', fg = p.darkPurple, italic = italic },
+    ['@keyword.coroutine.typescript'] = { bg = '', fg = p.darkPurple, italic = italic },
 
     ['@keyword.repeat'] = { bg = '', fg = p.lightRed },
     ['@keyword.repeat.tsx'] = { bg = '', fg = p.lightRed },
@@ -134,15 +129,15 @@ return function(p)
     ['@string.escape.rust'] = { bg = '', fg = p.green },
 
     -- function
-    ['@function.method.vue'] = { bg = '', fg = p.darkPurple, italic = true },
+    ['@function.method.vue'] = { bg = '', fg = p.darkPurple, italic = italic },
 
-    ['@function.call'] = { bg = '', fg = p.cyan, italic = true },
-    ['@function.call.tsx'] = { bg = '', fg = p.cyan, italic = true },
+    ['@function.call'] = { bg = '', fg = p.cyan, italic = italic },
+    ['@function.call.tsx'] = { bg = '', fg = p.cyan, italic = italic },
     ['@function.call.lua'] = { bg = '', fg = p.darkPurple },
 
-    ['@function.method.call'] = { bg = '', fg = p.cyan, italic = true },
-    ['@function.method.call.tsx'] = { bg = '', fg = p.cyan, italic = true },
-    ['@function.method.call.typescript'] = { bg = '', fg = p.cyan, italic = true },
+    ['@function.method.call'] = { bg = '', fg = p.cyan, italic = italic },
+    ['@function.method.call.tsx'] = { bg = '', fg = p.cyan, italic = italic },
+    ['@function.method.call.typescript'] = { bg = '', fg = p.cyan, italic = italic },
 
     -- tag
     ['@tag'] = { bg = '', fg = p.lightRed },
