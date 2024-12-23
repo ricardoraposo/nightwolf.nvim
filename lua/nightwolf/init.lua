@@ -7,9 +7,10 @@ local get_groups = require 'nightwolf.groups'
 ---@field theme string?
 ---@field transparency boolean?
 ---@field palette_overrides Palette?
----@field highlight_overrides table<string, Style>?
+---@field highlight_overrides table<string, vim.api.keyset.highlight>?
 M.config = {
   theme = 'dark',
+  italic = true,
   transparency = false,
   palette_overrides = {},
   highlight_overrides = {},
@@ -34,7 +35,7 @@ M.load = function(opts)
 
   p.background = opts.transparency == true and '' or p.background
 
-  local groups = get_groups(p)
+  local groups = get_groups(p, M.config.italic)
 
   groups = vim.tbl_deep_extend('force', groups, M.config.highlight_overrides)
 
