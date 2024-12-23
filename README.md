@@ -74,6 +74,7 @@ Additional settings for nightwolf are:
   theme = 'dark',
   transparency = false,
   palette_overrides = {},
+  highlight_overrides = {},
 }
 ```
 
