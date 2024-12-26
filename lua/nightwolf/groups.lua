@@ -9,6 +9,7 @@ return function(p, italic)
     Operator = { bg = '', fg = p.lightRed },
     Number = { bg = '', fg = p.darkYellow },
     Conditional = { bg = '', fg = p.darkPurple },
+    Directory = { bg = '', fg = p.cyan },
     Statement = { bg = '', fg = p.darkPurple },
     Error = { bg = p.red, fg = p.white },
     Comment = { bg = '', fg = p.color9, italic = italic },
