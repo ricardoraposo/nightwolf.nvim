@@ -4,6 +4,7 @@
 return function(p, italic)
   return {
     Normal = { bg = p.background, fg = p.muted },
+    NormalFloat = { bg = p.color15, fg = p.muted },
     Type = { bg = '', fg = p.blue, italic = italic },
     String = { bg = '', fg = p.green },
     Operator = { bg = '', fg = p.lightRed },
@@ -12,7 +13,7 @@ return function(p, italic)
     Directory = { bg = '', fg = p.cyan },
     Statement = { bg = '', fg = p.darkPurple },
     Error = { bg = p.red, fg = p.white },
-    Comment = { bg = '', fg = p.color9, italic = italic },
+    Comment = { bg = '', fg = p.comment, italic = italic },
     Repeat = { bg = '', fg = p.darkPurple },
     Function = { bg = '', fg = p.cyan, bold = true },
     Identifier = { bg = '', fg = p.lightYellow },
@@ -34,7 +35,10 @@ return function(p, italic)
     TabLineFill = { bg = p.black, fg = p.color19 },
     TSPunctDelimiter = { bg = '', fg = p.muted },
     DiagnosticDeprecated = { bg = '', fg = '', strikethrough = true },
+    DiagnosticHint = { bg = '', fg = p.blue },
+    DiagnosticError = { bg = '', fg = p.red },
     Special = { bg = '', fg = p.cyan },
+    Bold = { bg = '', fg = '', bold = true },
 
     -- Treesitter groups
 
@@ -161,7 +165,10 @@ return function(p, italic)
     ['@constant.builtin.rust'] = { bg = '', fg = p.lightYellow },
 
     -- markup
+    ['@spell'] = { bg = '', fg = p.muted },
     ['@markup.heading.1'] = { bg = '', fg = p.muted },
+    ['@markup.heading.2'] = { bg = '', fg = p.muted },
+    ['@markup.heading.3'] = { bg = '', fg = p.muted },
     ['@markup.heading.1.tsx'] = { bg = '', fg = p.muted },
 
     -- module
@@ -179,6 +186,7 @@ return function(p, italic)
     MiniStatuslineModeNormal = { bg = p.blue, fg = p.black, bold = true },
     MiniStatuslineModeInsert = { bg = p.lightPurple, fg = p.black, bold = true },
     MiniStatuslineModeVisual = { bg = p.lightRed, fg = p.black, bold = true },
+    MiniStatuslineModeCommand = { bg = p.cyan, fg = p.black, bold = true },
 
     TelescopeNormal = { link = 'Normal' },
     NonText = { link = 'Comment' },
