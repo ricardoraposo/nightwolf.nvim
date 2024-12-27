@@ -26,8 +26,10 @@ M.load = function(opts)
 
   local p
   if opts.theme == 'light' then
+    vim.opt.background = 'light'
     p = palette.light_colors
   else
+    vim.opt.background = 'dark'
     p = palette.dark_colors
   end
 
