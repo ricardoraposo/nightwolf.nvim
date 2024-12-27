@@ -4,7 +4,7 @@
 return function(p, italic)
   return {
     Normal = { bg = p.background, fg = p.muted },
-    NormalFloat = { bg = p.color15, fg = p.muted },
+    NormalFloat = { bg = p.color14, fg = p.muted },
     Type = { bg = '', fg = p.blue, italic = italic },
     String = { bg = '', fg = p.green },
     Operator = { bg = '', fg = p.lightRed },
