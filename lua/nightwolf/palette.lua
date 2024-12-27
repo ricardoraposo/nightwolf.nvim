@@ -14,7 +14,7 @@ local M = {}
 ---@field green string?
 ---@field lightRed string?
 ---@field muted string?
----@field color9 string?
+---@field comment string?
 ---@field color12 string?
 ---@field color14 string?
 ---@field color15 string?
@@ -38,7 +38,7 @@ M.dark_colors = {
   green = '#aae682',
   lightRed = '#ff7878',
   muted = '#c8c8c8',
-  color9 = '#647882',
+  comment = '#647882',
   color12 = '#969696',
   color14 = '#141414',
   color15 = '#161b10',
@@ -63,7 +63,7 @@ M.light_colors = {
   green = '#008700',
   lightRed = '#d7005f',
   muted = '#4a4a4a',
-  color9 = '#5f5f5f',
+  comment = '#6f6f6f',
   color12 = '#afafaf',
   color14 = '#e4e4e4',
   color15 = '#d7d7d7',

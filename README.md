@@ -112,7 +112,7 @@ Check below for valid entries:
   green = '#aae682',
   lightRed = '#ff7878',
   muted = '#c8c8c8',
-  color9 = '#647882',
+  comment = '#647882',
   color12 = '#969696',
   color14 = '#141414',
   color15 = '#161b10',
