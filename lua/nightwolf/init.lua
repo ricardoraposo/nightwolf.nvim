@@ -40,7 +40,7 @@ M.load = function(opts)
     vim.opt.background = 'dark'
     p = palette.black_colors
   else
-    utils.notify("Invalid theme. Using 'black' theme instead.", vim.log.levels.WARN)
+    utils.notify("Invalid theme. Using 'black' theme instead.\nValid themes are ('black', 'dark-blue', 'gray', 'light', )", vim.log.levels.WARN)
     vim.opt.background = 'dark'
     p = palette.black_colors
   end
