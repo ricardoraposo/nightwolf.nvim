@@ -9,7 +9,7 @@ local get_groups = require 'nightwolf.groups'
 ---@field palette_overrides Palette?
 ---@field highlight_overrides table<string, vim.api.keyset.highlight>?
 M.config = {
-  theme = 'dark',
+  theme = 'black',
   italic = true,
   transparency = false,
   palette_overrides = {},
