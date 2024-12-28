@@ -33,6 +33,9 @@ M.load = function(opts)
   elseif opts.theme == 'dark-blue' then
     vim.opt.background = 'dark'
     p = palette.dark_blue_colors
+  elseif opts.theme == 'gray' then
+    vim.opt.background = 'dark'
+    p = palette.gray_colors
   elseif opts.theme == 'black' then
     vim.opt.background = 'dark'
     p = palette.black_colors
