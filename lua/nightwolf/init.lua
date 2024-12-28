@@ -2,6 +2,7 @@ local M = {}
 
 local palette = require 'nightwolf.palette'
 local get_groups = require 'nightwolf.groups'
+local utils = require 'nightwolf.utils'
 
 ---@class NighwolfConfig
 ---@field theme string?
@@ -32,7 +33,11 @@ M.load = function(opts)
   elseif opts.theme == 'dark-blue' then
     vim.opt.background = 'dark'
     p = palette.dark_blue_colors
+  elseif opts.theme == 'black' then
+    vim.opt.background = 'dark'
+    p = palette.black_colors
   else
+    utils.notify("Invalid theme. Using 'black' theme instead.", vim.log.levels.WARN)
     vim.opt.background = 'dark'
     p = palette.black_colors
   end
