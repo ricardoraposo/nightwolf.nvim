@@ -134,8 +134,6 @@ return function(p, italic)
     ['@string.escape.rust'] = { bg = '', fg = p.green },
 
     -- function
-    ['@function.lua'] = { bg = '', fg = p.cyan, italic = italic },
-
     ['@function.method.vue'] = { bg = '', fg = p.darkPurple, italic = italic },
 
     ['@function.call'] = { bg = '', fg = p.cyan, italic = italic },
