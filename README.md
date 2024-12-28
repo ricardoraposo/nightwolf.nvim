@@ -71,7 +71,7 @@ Additional settings for nightwolf are:
 ```lua
 -- Default options:
 {
-  theme = 'dark',
+  theme = 'black', -- 'black', 'dark-blue', 'light'
   italic = true,
   transparency = false,
   palette_overrides = {},
