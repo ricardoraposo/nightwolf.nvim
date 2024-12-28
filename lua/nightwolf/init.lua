@@ -5,11 +5,12 @@ local get_groups = require 'nightwolf.groups'
 
 ---@class NighwolfConfig
 ---@field theme string?
+---@field italic boolean?
 ---@field transparency boolean?
 ---@field palette_overrides Palette?
 ---@field highlight_overrides table<string, vim.api.keyset.highlight>?
 M.config = {
-  theme = 'dark',
+  theme = 'black',
   italic = true,
   transparency = false,
   palette_overrides = {},
@@ -28,9 +29,12 @@ M.load = function(opts)
   if opts.theme == 'light' then
     vim.opt.background = 'light'
     p = palette.light_colors
+  elseif opts.theme == 'dark-blue' then
+    vim.opt.background = 'dark'
+    p = palette.dark_blue_colors
   else
     vim.opt.background = 'dark'
-    p = palette.dark_colors
+    p = palette.black_colors
   end
 
   p = vim.tbl_deep_extend('force', p, M.config.palette_overrides)
