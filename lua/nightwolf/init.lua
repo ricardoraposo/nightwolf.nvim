@@ -5,6 +5,7 @@ local get_groups = require 'nightwolf.groups'
 
 ---@class NighwolfConfig
 ---@field theme string?
+---@field italic boolean?
 ---@field transparency boolean?
 ---@field palette_overrides Palette?
 ---@field highlight_overrides table<string, vim.api.keyset.highlight>?
