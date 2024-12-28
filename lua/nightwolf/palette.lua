@@ -24,7 +24,7 @@ local M = {}
 ---@field color19 string?
 
 ---@type Palette
-M.dark_colors = {
+M.black_colors = {
   background = '#000000',
   black = '#000000',
   red = '#f05050',
@@ -46,6 +46,31 @@ M.dark_colors = {
   color17 = '#343434',
   color18 = '#3c3c3c',
   color19 = '#787878',
+}
+
+---@type Palette
+M.dark_blue_colors = {
+background = '#101e2c',
+black = '#101e2c',
+red = '#f05050',
+white = '#ffffff',
+blue = '#00b1ff',
+lightPurple = '#dc8cff',
+darkPurple = '#9696ff',
+cyan = '#00dcdc',
+lightYellow = '#ffdc96',
+darkYellow = '#ffb482',
+green = '#aae682',
+lightRed = '#ff7878',
+muted = '#bdd2e7',
+comment = '#647882',
+color12 = '#7ba5cf',
+color14 = '#14283c',
+color15 = '#243435',
+color16 = '#312531',
+color17 = '#18364f',
+color18 = '#1e4667',
+color19 = '#5f82a5',
 }
 
 ---@type Palette
