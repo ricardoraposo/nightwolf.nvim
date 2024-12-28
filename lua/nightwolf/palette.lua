@@ -98,6 +98,30 @@ M.gray_colors = {
   color19 = '#757575',
 }
 
+M.dark_gray_colors = {
+  background = '#1b1b1b',
+  black = '#1b1b1b',
+  white = '#ffffff',
+  red = '#f05050',
+  lightRed = '#ff7878',
+  blue = '#00b1ff',
+  cyan = '#00dcdc',
+  lightPurple = '#dc8cff',
+  darkPurple = '#9696ff',
+  lightYellow = '#ffdc96',
+  darkYellow = '#ffb482',
+  green = '#aae682',
+  muted = '#cecece',
+  comment = '#647882',
+  color12 = '#9d9d9d',
+  color14 = '#242424',
+  color15 = '#2d3227',
+  color16 = '#3a2322',
+  color17 = '#484848',
+  color18 = '#3d3d3d',
+  color19 = '#7c7c7c',
+}
+
 ---@type Palette
 M.light_colors = {
   background = '#eceff8',

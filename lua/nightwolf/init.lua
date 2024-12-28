@@ -26,6 +26,7 @@ end
 M.load = function(opts)
   opts = vim.tbl_deep_extend('force', M.config, opts or {})
 
+  ---@type Palette
   local p
   if opts.theme == 'light' then
     vim.opt.background = 'light'
@@ -36,6 +37,9 @@ M.load = function(opts)
   elseif opts.theme == 'gray' then
     vim.opt.background = 'dark'
     p = palette.gray_colors
+  elseif opts.theme == 'dark-gray' then
+    vim.opt.background = 'dark'
+    p = palette.dark_gray_colors
   elseif opts.theme == 'black' then
     vim.opt.background = 'dark'
     p = palette.black_colors
