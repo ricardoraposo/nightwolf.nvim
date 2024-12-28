@@ -24,4 +24,17 @@ M.link = function(from, to)
   vim.api.nvim_set_hl(0, from, { link = to })
 end
 
+--- Wrapper for vim.notify
+--- @param msg string
+--- @param level integer | nil
+M.notify = function(msg, level)
+  local status, notify = pcall(require, 'notify')
+
+  if status then
+    vim.notify = notify
+  end
+
+  vim.notify(msg, level)
+end
+
 return M
