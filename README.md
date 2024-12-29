@@ -13,21 +13,40 @@ I mainly code in Typescript and Rust, so there might be a few highlight groups t
 I also use treesitter, so I didn't bother making the theme work without it.
 Therefore, PR's are more than welcome.
 
-### Black
-<img width="1421" alt="image" src="https://github.com/user-attachments/assets/26573085-cfdf-4288-bfe6-e30896b2aa8f" />
-
-### Dark Blue
-<img width="1419" alt="image" src="https://github.com/user-attachments/assets/86b58f5a-f557-4450-b20d-eb323738af4b" />
-
-### Gray
-<img width="1418" alt="image" src="https://github.com/user-attachments/assets/8e886181-3c0e-49c3-99c3-c3410d00eb72" />
-
-### Dark Gray
-<img width="1417" alt="image" src="https://github.com/user-attachments/assets/3ea0c1b3-8f25-459d-92bc-1829bca506e9" />
-
-### Light
-<img width="1414" alt="image" src="https://github.com/user-attachments/assets/59fa4d23-2a76-495e-b28f-d8456b992537" />
-
+<table width="100%">
+  <tr>
+    <th>Black</th>
+    <th>Dark Blue</th>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img width="1421" alt="image" src="https://github.com/user-attachments/assets/26573085-cfdf-4288-bfe6-e30896b2aa8f" />
+    </td>
+    <td width="50%">
+      <img width="1419" alt="image" src="https://github.com/user-attachments/assets/86b58f5a-f557-4450-b20d-eb323738af4b" />
+    </td>
+  </tr>
+   <tr>
+    <th>Gray</th>
+    <th>Dark Gray</th>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img width="1418" alt="image" src="https://github.com/user-attachments/assets/8e886181-3c0e-49c3-99c3-c3410d00eb72" />
+    </td>
+    <td width="50%">
+      <img width="1417" alt="image" src="https://github.com/user-attachments/assets/3ea0c1b3-8f25-459d-92bc-1829bca506e9" />
+    </td>
+  </tr>
+    <tr>
+    <th>Light</th>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img width="1414" alt="image" src="https://github.com/user-attachments/assets/59fa4d23-2a76-495e-b28f-d8456b992537" />
+    </td>
+  </tr>
+</table>
 
 ## Installation
 
