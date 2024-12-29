@@ -62,11 +62,17 @@ M.load = function(opts)
   end
 end
 
-vim.api.nvim_create_autocmd('OptionSet', {
-  pattern = 'background',
-  callback = function()
-    M.load { theme = vim.o.background == 'light' and 'light' or nil }
-  end,
-})
+local highlight_augroup = vim.api.nvim_create_augroup('nightwolf-bg-hr', { clear = false })
+if vim.g.colors_name == 'nightwolf' then
+  vim.api.nvim_create_autocmd('OptionSet', {
+    group = highlight_augroup,
+    pattern = 'background',
+    callback = function()
+      M.load { theme = vim.o.background == 'light' and 'light' or nil }
+    end,
+  })
+else
+  vim.api.nvim_clear_autocmds { group = highlight_augroup }
+end
 
 return M
