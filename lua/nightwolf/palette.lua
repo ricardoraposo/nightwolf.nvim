@@ -147,4 +147,12 @@ M.light_colors = {
   color19 = '#d0d0d0',
 }
 
+M.colors = {
+  light = M.light_colors,
+  black = M.black_colors,
+  ['dark-blue'] = M.dark_blue_colors,
+  gray = M.gray_colors,
+  ['dark-gray'] = M.dark_gray_colors,
+}
+
 return M
