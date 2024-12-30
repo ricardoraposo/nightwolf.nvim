@@ -1,1 +1,1 @@
-require('nightwolf').load { theme = 'gray' or nil }
+require('nightwolf').load { theme = 'gray' }
