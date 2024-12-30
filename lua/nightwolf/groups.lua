@@ -36,7 +36,8 @@ return function(p, italic)
     TSPunctDelimiter = { bg = '', fg = p.muted },
     DiagnosticDeprecated = { bg = '', fg = '', strikethrough = true },
     DiagnosticHint = { bg = '', fg = p.blue },
-    DiagnosticError = { bg = '', fg = p.red },
+    DiagnosticError = { bg = '', fg = p.red, undercurl = true },
+    DiagnosticWarn = { bg = '', fg = p.darkYellow, underline = true },
     Special = { bg = '', fg = p.cyan },
     Bold = { bg = '', fg = '', bold = true },
 
