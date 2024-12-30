@@ -51,6 +51,7 @@ return function(p, italic)
     ['@keyword.tsx'] = { bg = '', fg = p.darkPurple },
     ['@keyword.typescript'] = { bg = '', fg = p.blue },
     ['@keyword.rust'] = { bg = '', fg = p.lightRed },
+    ['@keyword.lua'] = { bg = '', fg = p.muted },
 
     ['@keyword.function'] = { bg = '', fg = p.blue, italic = italic },
     ['@keyword.function.tsx'] = { bg = '', fg = p.blue, italic = italic },
@@ -80,11 +81,16 @@ return function(p, italic)
     ['@variable.tsx'] = { bg = '', fg = p.lightYellow },
     ['@variable.typescript'] = { bg = '', fg = p.lightYellow },
     ['@variable.rust'] = { bg = '', fg = p.lightYellow },
+    ['@variable.nix'] = { bg = '', fg = p.lightYellow },
+    ['@variable.lua'] = { bg = '', fg = p.lightYellow },
 
     ['@variable.parameter'] = { bg = '', fg = p.lightYellow },
     ['@variable.parameter.tsx'] = { bg = '', fg = p.lightYellow },
     ['@variable.parameter.typescript'] = { bg = '', fg = p.lightYellow },
     ['@variable.parameter.rust'] = { bg = '', fg = p.lightYellow },
+
+    ['@variable.member.lua'] = { bg = '', fg = p.muted },
+    ['@variable.member.nix'] = { bg = '', fg = p.darkPurple },
 
     ['@variable.builtin'] = { bg = '', fg = p.lightRed },
     ['@variable.builtin.tsx'] = { bg = '', fg = p.lightRed },
@@ -144,6 +150,8 @@ return function(p, italic)
     ['@function.method.call.tsx'] = { bg = '', fg = p.cyan, italic = italic },
     ['@function.method.call.typescript'] = { bg = '', fg = p.cyan, italic = italic },
 
+    ['@function.builtin.lua'] = { bg = '', fg = p.darkPurple, italic = italic },
+
     -- tag
     ['@tag'] = { bg = '', fg = p.lightRed },
     ['@tag.tsx'] = { bg = '', fg = p.lightRed },
@@ -173,6 +181,9 @@ return function(p, italic)
 
     -- module
     ['@module.rust'] = { bg = '', fg = p.lightPurple },
+
+    -- lsp
+    ['@lsp.type.property.nix'] = { bg = '', fg = p.darkPurple },
 
     -- Plugin specific
     NvimTreeFolderName = { bg = '', fg = p.blue },
