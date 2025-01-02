@@ -40,6 +40,7 @@ return function(p, italic)
     DiagnosticWarn = { bg = '', fg = p.darkYellow, underline = true },
     Special = { bg = '', fg = p.cyan },
     Bold = { bg = '', fg = '', bold = true },
+    Added = { bg = '', fg = p.green },
 
     -- Treesitter groups
 
