@@ -10,7 +10,7 @@
 Lua port of the [Nightwolf VS**** theme](https://github.com/mao-santaella-rs/NightWolfTheme) for Neovim with Treesitter support!
 
 I mainly code in Typescript and Rust, so there might be a few highlight groups that were not set yet.
-I also use treesitter, so I didn't bother making the theme work without it.
+I also use treesitter, so I'm not making an active effort on supporting the theme to work without it.
 Therefore, PR's are more than welcome.
 
 <table width="100%">
