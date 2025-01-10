@@ -48,6 +48,11 @@ Therefore, PR's are more than welcome.
   </tr>
 </table>
 
+## Custom themes
+
+Make your own themes!!! Here are some [inspirations](https://github.com/ricardoraposo/nightwolf.nvim/discussions/10)
+
+
 ## Installation
 
 ### Lazy
