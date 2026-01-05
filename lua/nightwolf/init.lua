@@ -43,7 +43,7 @@ M.load = function(opts)
 
   if not p then
     p = palette.black_colors
-    utils.notify("Invalid theme. Using 'black' theme instead.\nValid themes are ('black', 'dark-blue', 'gray', 'dark-gray', 'light'. )", vim.log.levels.WARN)
+    utils.notify("Invalid theme. Using 'black' theme instead.\nValid themes are ('black', 'dark-blue', 'gray', 'dark-gray', 'light', 'wolf', 'dawn', 'dusk'. )", vim.log.levels.WARN)
   end
 
   p = vim.tbl_deep_extend('force', p, M.config.palette_overrides)
@@ -58,6 +58,51 @@ M.load = function(opts)
     vim.api.nvim_set_hl(0, highlight_group, styles)
   end
 
+end
+
+M.lualine = function(opts)
+  opts = opts or {}
+  local theme = opts.theme or M.config.theme
+
+  ---@type Palette
+  local p = palette.colors[theme]
+
+  if not p then
+    p = palette.black_colors
+  end
+
+  return {
+    normal = {
+      a = { bg = p.blue, fg = p.black, gui = 'bold' },
+      b = { bg = p.color12, fg = p.black },
+      c = { bg = p.color17, fg = p.muted },
+    },
+    insert = {
+      a = { bg = p.lightPurple, fg = p.black, gui = 'bold' },
+      b = { bg = p.color12, fg = p.black },
+      c = { bg = p.color17, fg = p.muted },
+    },
+    visual = {
+      a = { bg = p.lightRed, fg = p.black, gui = 'bold' },
+      b = { bg = p.color12, fg = p.black },
+      c = { bg = p.color17, fg = p.muted },
+    },
+    replace = {
+      a = { bg = p.cyan, fg = p.black, gui = 'bold' },
+      b = { bg = p.color12, fg = p.black },
+      c = { bg = p.color17, fg = p.muted },
+    },
+    command = {
+      a = { bg = p.darkYellow, fg = p.black, gui = 'bold' },
+      b = { bg = p.color12, fg = p.black },
+      c = { bg = p.color17, fg = p.muted },
+    },
+    inactive = {
+      a = { bg = p.color14, fg = p.muted, gui = 'bold' },
+      b = { bg = p.color14, fg = p.muted },
+      c = { bg = p.color14, fg = p.muted },
+    },
+  }
 end
 
 return M

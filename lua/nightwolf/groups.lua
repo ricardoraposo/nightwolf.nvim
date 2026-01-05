@@ -230,5 +230,83 @@ return function(p, italic)
     TSRepeat = { link = 'Repeat' },
     TSString = { link = 'String' },
     TSTagDelimiter = { link = 'Type' },
+
+    -- Terminal colors
+    Terminal = { bg = p.background, fg = p.muted },
+
+    -- Rainbow parentheses
+    RainbowRed = { bg = '', fg = p.red },
+    RainbowYellow = { bg = '', fg = p.darkYellow },
+    RainbowBlue = { bg = '', fg = p.blue },
+    RainbowOrange = { bg = '', fg = p.lightPurple },
+    RainbowGreen = { bg = '', fg = p.green },
+    RainbowViolet = { bg = '', fg = p.darkPurple },
+    RainbowCyan = { bg = '', fg = p.cyan },
+
+    -- vim-illuminate
+    IlluminatedWord = { bg = p.color17 },
+    IlluminatedCurWord = { bg = p.color17 },
+    MatchParen = { bg = p.color17, fg = p.muted, bold = true },
+
+    -- Gitsigns
+    GitSignsAdd = { bg = p.background, fg = p.green },
+    GitSignsChange = { bg = p.background, fg = p.darkYellow },
+    GitSignsDelete = { bg = p.background, fg = p.red },
+    GitSignsChangeDelete = { bg = p.background, fg = p.lightRed },
+    GitSignsUntracked = { bg = p.background, fg = p.cyan },
+
+    -- Which-Key
+    WhichKey = { bg = p.background, fg = p.blue },
+    WhichKeyGroup = { bg = '', fg = p.lightPurple },
+    WhichKeyDesc = { bg = '', fg = p.lightYellow },
+    WhichKeyFloat = { bg = p.color14, fg = p.muted },
+    WhichKeySeparator = { bg = '', fg = p.comment },
+
+    -- Noice
+    NoiceCmdlinePopup = { bg = p.color14, fg = p.muted },
+    NoiceCmdlinePopupBorder = { bg = p.color14, fg = p.darkPurple },
+    NoiceCmdlinePopupBorderCmdline = { bg = p.color14, fg = p.darkPurple },
+    NoiceCmdlinePopupBorderSearch = { bg = p.color14, fg = p.green },
+    NoiceCmdlinePopupBorderError = { bg = p.color14, fg = p.red },
+    NoiceCmdlinePopupBorderWarn = { bg = p.color14, fg = p.darkYellow },
+    NoiceCompletionMenu = { bg = p.background, fg = p.muted },
+    NoiceCompletionMenuSelected = { bg = p.color17, fg = p.lightYellow },
+    NoiceFormatTitle = { bg = '', fg = p.lightPurple },
+    NoiceFormatKind = { bg = '', fg = p.darkPurple },
+
+    -- LSP Semantic Tokens (generic)
+    ['@lsp.type.class'] = { bg = '', fg = p.lightPurple },
+    ['@lsp.type.function'] = { bg = '', fg = p.cyan },
+    ['@lsp.type.method'] = { bg = '', fg = p.cyan },
+    ['@lsp.type.variable'] = { bg = '', fg = p.muted },
+    ['@lsp.type.property'] = { bg = '', fg = p.lightYellow },
+    ['@lsp.type.keyword'] = { bg = '', fg = p.darkPurple },
+    ['@lsp.type.string'] = { bg = '', fg = p.green },
+    ['@lsp.type.number'] = { bg = '', fg = p.darkYellow },
+    ['@lsp.type.type'] = { bg = '', fg = p.lightPurple },
+    ['@lsp.type.enum'] = { bg = '', fg = p.lightPurple },
+    ['@lsp.type.interface'] = { bg = '', fg = p.darkPurple },
+    ['@lsp.type.struct'] = { bg = '', fg = p.darkPurple },
+    ['@lsp.type.parameter'] = { bg = '', fg = p.lightYellow },
+    ['@lsp.type.constant'] = { bg = '', fg = p.lightRed },
+    ['@lsp.type.decorator'] = { bg = '', fg = p.blue },
+    ['@lsp.type.namespace'] = { bg = '', fg = p.darkPurple },
+    ['@lsp.type.operator'] = { bg = '', fg = p.muted },
+    ['@lsp.type.event'] = { bg = '', fg = p.lightPurple },
+    ['@lsp.type.modifier'] = { bg = '', fg = p.lightRed },
+
+    -- Telescope extended highlights
+    TelescopeTitle = { bg = p.color14, fg = p.blue, bold = true },
+    TelescopePromptTitle = { bg = p.color14, fg = p.darkPurple, bold = true },
+    TelescopePreviewTitle = { bg = p.color14, fg = p.green, bold = true },
+    TelescopeBorder = { bg = p.background, fg = p.color14 },
+    TelescopePromptBorder = { bg = p.background, fg = p.color14 },
+    TelescopePreviewBorder = { bg = p.background, fg = p.color14 },
+    TelescopePromptNormal = { bg = p.background, fg = p.muted },
+    TelescopePromptPrefix = { bg = p.background, fg = p.lightRed },
+    TelescopeSelection = { bg = p.color17, fg = p.lightYellow },
+    TelescopeSelectionCaret = { bg = p.color17, fg = p.lightRed },
+    TelescopeMultiSelection = { bg = p.color14, fg = p.cyan },
+    TelescopeResultsTitle = { bg = p.color14, fg = p.muted },
   }
 end
