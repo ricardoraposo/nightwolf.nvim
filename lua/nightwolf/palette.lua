@@ -123,81 +123,6 @@ M.dark_gray_colors = {
 }
 
 ---@type Palette
-M.wolf_colors = {
-  background = '#1a1a2e',
-  black = '#1a1a2e',
-  white = '#e0e0e0',
-  red = '#ff6b6b',
-  lightRed = '#ff8787',
-  blue = '#4dabf7',
-  cyan = '#3bc9db',
-  lightPurple = '#da77f2',
-  darkPurple = '#9775fa',
-  lightYellow = '#ffd43b',
-  darkYellow = '#fcc419',
-  green = '#69db7c',
-  muted = '#adb5bd',
-  comment = '#636e72',
-  color12 = '#868e96',
-  color14 = '#22223b',
-  color15 = '#2a2a4a',
-  color16 = '#3d2b56',
-  color17 = '#3d3d5c',
-  color18 = '#4a4a6a',
-  color19 = '#6c6c8a',
-}
-
----@type Palette
-M.dawn_colors = {
-  background = '#faf8f5',
-  black = '#faf8f5',
-  white = '#2d2d2d',
-  red = '#d6336c',
-  lightRed = '#e64980',
-  blue = '#228be6',
-  cyan = '#15aabf',
-  lightPurple = '#be4bdb',
-  darkPurple = '#7950f2',
-  lightYellow = '#fab005',
-  darkYellow = '#f59f00',
-  green = '#40c057',
-  muted = '#495057',
-  comment = '#868e96',
-  color12 = '#ced4da',
-  color14 = '#f1f3f5',
-  color15 = '#e9ecef',
-  color16 = '#ffc9c9',
-  color17 = '#dee2e6',
-  color18 = '#c8cbcf',
-  color19 = '#a5d8ff',
-}
-
----@type Palette
-M.dusk_colors = {
-  background = '#1f1f3d',
-  black = '#1f1f3d',
-  white = '#e4e4ef',
-  red = '#ff6b6b',
-  lightRed = '#ff8787',
-  blue = '#748ffc',
-  cyan = '#66d9e8',
-  lightPurple = '#da77f2',
-  darkPurple = '#9775fa',
-  lightYellow = '#ffd43b',
-  darkYellow = '#fcc419',
-  green = '#69db7c',
-  muted = '#b3b3cc',
-  comment = '#6c757d',
-  color12 = '#8080a6',
-  color14 = '#2d2d5c',
-  color15 = '#3a3a6e',
-  color16 = '#4a3b6e',
-  color17 = '#4d4d7a',
-  color18 = '#5c5c94',
-  color19 = '#7a7aa8',
-}
-
----@type Palette
 M.light_colors = {
   background = '#eceff8',
   black = '#eceff8',
@@ -228,9 +153,6 @@ M.colors = {
   ['dark-blue'] = M.dark_blue_colors,
   gray = M.gray_colors,
   ['dark-gray'] = M.dark_gray_colors,
-  wolf = M.wolf_colors,
-  dawn = M.dawn_colors,
-  dusk = M.dusk_colors,
 }
 
 return M

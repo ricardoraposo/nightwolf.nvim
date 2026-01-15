@@ -52,16 +52,6 @@ Therefore, PR's are more than welcome.
 
 Make your own themes!!! Here are some [inspirations](https://github.com/ricardoraposo/nightwolf.nvim/discussions/10)
 
-### Theme variants
-
-Nightwolf now includes additional intermediate theme variants:
-
-| Theme | Description |
-|-------|-------------|
-| `wolf` | A balanced dark theme with purple/blue accents |
-| `dawn` | A warm, cozy light theme with pink/red accents |
-| ` dusk` | A deep purple-toned dark theme |
-
 
 ## Installation
 
@@ -115,7 +105,7 @@ Additional settings for nightwolf are:
 ```lua
 -- Default options:
 {
-  theme = 'black', -- 'black', 'dark-blue', 'gray', 'dark-gray', 'light', 'wolf', 'dawn', 'dusk'
+  theme = 'black', -- 'black', 'dark-blue', 'gray', 'dark-gray', 'light'
   italic = true,
   transparency = false,
   palette_overrides = {},
@@ -199,61 +189,6 @@ Please note that the override values must follow the attributes from the highlig
 - **italic** - true or false for italic font
 
 Other values can be seen in [`synIDattr`](<https://neovim.io/doc/user/builtin.html#synIDattr()>)
-
-## Integrations
-
-### Lualine
-
-Nightwolf includes a built-in lualine theme. To use it:
-
-```lua
-require('lualine').setup {
-  options = {
-    theme = require('nightwolf').lualine(),
-  },
-}
-```
-
-You can also specify a different theme variant for lualine:
-
-```lua
-require('lualine').setup {
-  options = {
-    theme = require('nightwolf').lualine { theme = 'dawn' },
-  },
-}
-```
-
-### Supported Plugins
-
-Nightwolf includes highlight groups for the following plugins:
-
-- **Telescope** - Full theme integration
-- **Gitsigns** - Add, change, delete, and untracked signs
-- **Which-Key** - Keybinding popup menu
-- **Noice** - Command line and notification UI
-- **vim-illuminate** - Word under cursor highlighting
-- **NvimTree** - File explorer
-- **MiniStatusline** - Status line mode colors
-- **Rainbow parentheses** - Colorful nested brackets
-
-### Rainbow Parentheses
-
-To enable rainbow parentheses, install a plugin like [rainbow-parentheses.nvim](https://github.com/joshdick/rainbow-parentheses.nvim) or use Treesitter:
-
-```lua
--- Using nvim-treesitter
-require('nvim-treesitter.configs').setup {
-  rainbow = {
-    enable = true,
-    extended_mode = true,
-  },
-}
-```
-
-### Terminal Colors
-
-Nightwolf sets terminal colors for Neovim's built-in terminal:
 
 ## Acknowledgements
 
